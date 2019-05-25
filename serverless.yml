@@ -8,7 +8,7 @@ provider:
     - README.md
     - .gitignore
     - var.env
-    - events
+    - payloads
 
 functions:
   email:
