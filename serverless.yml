@@ -7,11 +7,12 @@ provider:
   exclude:
     - README.md
     - .gitignore
-    - sendgrid.env
+    - var.env
+    - events
 
 functions:
   email:
-    handler: handler.email
+    handler: src/index.email
     events:
       - http:
           path: email
@@ -19,3 +20,4 @@ functions:
           cors: true
     environment:
       SENDGRID_API_KEY: ${env:SENDGRID_API_KEY}
+      CONTACT_EMAIL: ${env:CONTACT_EMAIL}
