@@ -10,7 +10,9 @@
     "serverless": "^1.43.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified YET\" && exit 0",
+    "package": "serverless package",
+    "deploy": "serverless deploy -v --stage prod"
   },
   "repository": {
     "type": "git",
