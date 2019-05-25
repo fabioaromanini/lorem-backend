@@ -6,7 +6,8 @@ provider:
   stage: dev
   exclude:
     - README.md
-    - .*
+    - .gitignore
+    - sendgrid.env
 
 functions:
   email:
@@ -17,4 +18,4 @@ functions:
           method: post
           cors: true
     environment:
-      SENDGRID_API_KEY: PLACEHOLDER
+      SENDGRID_API_KEY: ${env:SENDGRID_API_KEY}

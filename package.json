@@ -1,0 +1,23 @@
+{
+  "name": "lorem-backend",
+  "version": "1.0.0",
+  "description": "Serverless project for a REST endpoint that allows email sending with sendgrid, deployed in AWS.",
+  "main": "handler.js",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fabioaromanini/lorem-backend.git"
+  },
+  "author": "fabioaromanini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabioaromanini/lorem-backend/issues"
+  },
+  "homepage": "https://github.com/fabioaromanini/lorem-backend#readme"
+}
