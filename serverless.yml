@@ -1,0 +1,23 @@
+service: lorem-backend
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+  exclude:
+    - README.md
+    - .gitignore
+    - var.env
+    - payloads
+
+functions:
+  email:
+    handler: src/index.email
+    events:
+      - http:
+          path: email
+          method: post
+          cors: true
+    environment:
+      SENDGRID_API_KEY: ${env:SENDGRID_API_KEY}
+      CONTACT_EMAIL: ${env:CONTACT_EMAIL}
