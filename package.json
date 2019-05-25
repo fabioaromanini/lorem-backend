@@ -6,7 +6,9 @@
   "dependencies": {
     "@sendgrid/mail": "^6.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "serverless": "^1.43.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
