@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"No test specified YET\" && exit 0",
     "package": "serverless package",
-    "deploy": "serverless deploy -v --stage prod"
+    "deploy": "serverless deploy -v --stage cd-test"
   },
   "repository": {
     "type": "git",
