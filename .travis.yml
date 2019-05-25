@@ -2,10 +2,7 @@ language: node_js
 node_js:
   - 'lts/dubnium'
 
-before_script:
-  - npm run test
-
-script: npm run package
+script: npm run test
 
 deploy:
   - provider: script
